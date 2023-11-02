@@ -12,13 +12,15 @@
     "@dnd-kit/core": "^6.0.8",
     "@dnd-kit/modifiers": "^6.0.1",
     "@dnd-kit/sortable": "^7.0.2",
+    "axios": "^1.6.0",
     "clsx": "^2.0.0",
     "mobx": "^6.10.2",
     "mobx-react": "^9.0.1",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.47.0"
+    "react-hook-form": "^7.47.0",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/node": "^20",

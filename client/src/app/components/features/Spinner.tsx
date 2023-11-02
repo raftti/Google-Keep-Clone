@@ -1,10 +1,15 @@
-import React from 'react';
+import clsx from 'clsx';
+import React, { FC } from 'react';
 
-const Spinner = () => {
+interface ISpinner{
+    className?: string
+}
+
+const Spinner: FC<ISpinner> = ({className}) => {
     return (
-        <div>
-            
-        </div>
+        <i className={clsx("loader --1",
+        className != null ? className : "",
+        )}></i>
     );
 };
 

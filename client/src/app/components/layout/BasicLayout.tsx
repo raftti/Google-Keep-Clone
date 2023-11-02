@@ -27,7 +27,6 @@ export const BasicLayout = observer(({
       <div className='flex '>
         <Menu isMenuOpen={appActions.isMenuOpen}/>
         <div className={clsx("ml-[14vw] flex flex-col w-full", {'ml-[22vw]': appActions.isMenuOpen})}>
-          <AddNote className={clsx('')}/>
           {children}
         </div>
       </div>

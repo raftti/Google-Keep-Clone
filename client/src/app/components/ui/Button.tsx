@@ -11,12 +11,13 @@ interface IButton {
   bgByClick?: string;
   flag?: string
   isMenuOpen?: boolean
+  size?: number
   clickAction?: () => void;
   setOpen?: () => void
 };
 
 
-const Button: FC<IButton> = ({ icon, clickAction, className, flag, children, text }) => {
+const Button: FC<IButton> = ({ icon, clickAction, className, flag, children, text, size }) => {
   const router = useRouter();
 
   return (
@@ -28,7 +29,8 @@ const Button: FC<IButton> = ({ icon, clickAction, className, flag, children, tex
       (flag === 'trash' && router.pathname === '/trash') ? 'bg-moccasin hover:bg-moccasin' : null,
     )}>
       {text}
-      {icon && <Image width={24} height={24} className="m-[10px]" src={icon} alt="image" />}
+      {icon && size ==null && <Image width={24} height={24} className="m-[10px]" src={icon} alt="image" />}
+      {icon && size !=null && <Image width={size} height={size} className="m-[10px]" src={icon} alt="image" />}
       {children}
     </button>
   );

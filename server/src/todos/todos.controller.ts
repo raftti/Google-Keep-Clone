@@ -18,7 +18,7 @@ import { ToDosService } from './todos.service';
 import { CreateToDoDto } from './dto/create-to-do.dto';
 import { UpdateToDoDto } from './dto/update-to-do.dto';
 
-@Controller('todo')
+@Controller('todos')
 export class ToDosController {
   constructor(
     private readonly toDosService: ToDosService,

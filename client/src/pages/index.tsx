@@ -9,7 +9,6 @@ export default function Home() {
     <main className=" overflow-x-hidden">
       <BasicLayout>
         <div className="h-full">
-          <h1>омг</h1>
           <NotesContainer />
         </div>
       </BasicLayout>

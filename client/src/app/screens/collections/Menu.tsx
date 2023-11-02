@@ -47,6 +47,7 @@ const Menu: FC<IMenu> = ({ isMenuOpen }) => {
       >
           <h3 className={clsx('mr-[9.8vw] group-hover/menu:block', isMenuOpen ? "block" : "hidden")}>Корзина</h3>
       </Button>
+
     </div>
   );
 }
